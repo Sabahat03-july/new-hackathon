@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Verdana;
+    background-image: linear-gradient(#636162, #b1a7af);
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Container */
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3 {
+    color: #4d4d4d;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #fbb03b;
+}
+
+a {
+    color: #fbb03b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Personal Information */
+#personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.personal-details h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.personal-details p {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fbb03b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section-content {
+    padding-left: 20px;
+}
+
+.edu-item, .work-item {
+    margin-bottom: 15px;
+    color: #fbb03b; /* Fix the misplaced curly brace */
+}
+
+.skill {
+    background-color: #fbb03b;
+    color: black;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* New class for custom text color */
+.bty {
+    color: #yourColor; /* Set your desired color here */
+}
+
+/* Hidden Class for Toggle */
+.hidden {
+    display: none;
+}
+
+/* Button Styling */
+.toggle-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fbb03b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e49f2f;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (min-width: 200px) and (max-width: 768px) {
+    .resume-container {
+        padding: 20px;
+    }
+}
